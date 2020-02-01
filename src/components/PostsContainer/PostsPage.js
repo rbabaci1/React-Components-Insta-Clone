@@ -8,8 +8,8 @@ const PostsPage = props => {
   return (
     <div className="posts-container-wrapper">
       {/* map through data here */}
-      {props.dummyData.map(user => {
-        <Post user={user} />;
+      {props.dummyData.map((post, index) => {
+        return <Post post={post} key={index} />;
       })}
     </div>
   );
