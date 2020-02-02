@@ -76,10 +76,58 @@ const dummyData = [
   {
     username: "Nas",
     thumbnailUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLJaynsH-IZbhhRZ1hC9hK4pkdFJ_b447lQIqvRz3FsI3YcHCO",
+      "https://m.media-amazon.com/images/M/MV5BMTc4NWUxNDYtMGZjMi00MTMzLWJlZWMtNTYzMDJlNmNiMWRjXkEyXkFqcGdeQXVyNDM4MjM3NzM@._V1_.jpg",
     imageUrl:
       "https://townsquare.media/site/812/files/2014/10/jay-z-nas-2005.jpg?w=980&q=75",
     likes: 122200,
+    timestamp: "July 17th 2017, 12:42:40 pm",
+    comments: [
+      {
+        username: "philzcoffee",
+        text:
+          "We've got more than just delicious coffees to offer at our shops!"
+      },
+      {
+        username: "biancasaurus",
+        text: "Looks delicious!"
+      },
+      {
+        username: "martinseludo",
+        text: "Can't wait to try it!"
+      }
+    ]
+  },
+  {
+    username: "Stephen curry",
+    thumbnailUrl:
+      "https://www.biography.com/.image/t_share/MTM5OTQxMjg1NzA3MzkyMDQw/stephen-curry-gettyimages-538912798_1600jpg.jpg",
+    imageUrl:
+      "https://cdn.vox-cdn.com/thumbor/Ey5rEVPmlBAi5bi2m3VQliYmXOQ=/0x0:3999x2666/1200x800/filters:focal(1216x518:1854x1156)/cdn.vox-cdn.com/uploads/chorus_image/image/66140702/1200427526.jpg.0.jpg",
+    likes: 123444,
+    timestamp: "July 17th 2017, 12:42:40 pm",
+    comments: [
+      {
+        username: "philzcoffee",
+        text:
+          "We've got more than just delicious coffees to offer at our shops!"
+      },
+      {
+        username: "biancasaurus",
+        text: "Looks delicious!"
+      },
+      {
+        username: "martinseludo",
+        text: "Can't wait to try it!"
+      }
+    ]
+  },
+  {
+    username: "Shakira",
+    thumbnailUrl:
+      "https://www.wonderwall.com/photos/2016/06/09/104-185459_Actual.jpg?x=609&y=800&icq=74&sig=5de05a43748a01ef49cada352cf88776",
+    imageUrl:
+      "https://www.wearelatinlive.com/media/CACHE/images/hero/shakira_belly_scarf_dance/3f1b34c8014a6558bd2eb7a04510a22c.jpg",
+    likes: 1234444,
     timestamp: "July 17th 2017, 12:42:40 pm",
     comments: [
       {
