@@ -1,5 +1,3 @@
-// You will add code in this file
-
 import React, { useState } from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";

@@ -2,20 +2,27 @@
   border-bottom: 1px solid #3333;
   height: 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background: #ffffff;
+  width: 33%;
+  min-width: 400px;
+  margin: 5px auto;
 }
+
 .search-form {
   width: 150px;
   font-size: 14px;
 }
+
 .search-form input {
   text-align: center;
   color: #262626;
+  width: 150px;
 }
-.image-wrapper {
-  height: 50px;
+
+.fab {
+  font-size: 30px;
 }
 
 .logo-image {

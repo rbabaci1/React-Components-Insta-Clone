@@ -1,4 +1,3 @@
-//Complete the necessary code in this file
 import React from "react";
 import Post from "./Post";
 import "./Posts.css";
