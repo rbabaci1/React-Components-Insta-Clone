@@ -16,9 +16,11 @@
 }
 
 .search-form input {
-  text-align: center;
   color: #262626;
   width: 150px;
+  font-size: 15px;
+  padding: 1px 5px;
+  border: 1px solid;
 }
 
 .fab {
