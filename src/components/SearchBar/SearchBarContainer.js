@@ -5,7 +5,7 @@ import PostsPage from "../PostsContainer/PostsPage";
 // Destructure the dummyData array and extract the array
 const SearchBar = ({ dummyData }) => {
   /* The searchPost state saves the data from the search input
-  on every occurance of the onChange event "line 32" */
+  on every occurance of the onChange event "line 46" */
   const [searchedPost, setSearchedPost] = useState("");
   // The searchResults state is used to set the search result
   const [searchUsername, setSearchedUsername] = useState([]);
