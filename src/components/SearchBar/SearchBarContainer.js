@@ -8,7 +8,7 @@ const SearchBar = ({ dummyData }) => {
   on every occurance of the onChange event "line 46" */
   const [searchedPost, setSearchedPost] = useState("");
   // The searchResults state is used to set the search result
-  const [searchUsername, setSearchedUsername] = useState([]);
+  const [searchedUser, setSearchedUser] = useState([]);
 
   // useEffect executes whenever the dependency method get changed.
   useEffect(
@@ -22,7 +22,7 @@ const SearchBar = ({ dummyData }) => {
         user.username.toLowerCase().includes(searchedPost.toLowerCase())
       );
       // set the state of the searched username to the filter array of users
-      setSearchedUsername(results);
+      setSearchedUser(results);
     },
 
     /* The array of dependencies that useEffect dependent on which
@@ -60,7 +60,7 @@ const SearchBar = ({ dummyData }) => {
         </div>
       </div>
       {/* render only the posts of the searched username */}
-      <PostsPage dummyData={searchUsername} />
+      <PostsPage dummyData={searchedUser} />
     </div>
   );
 };
