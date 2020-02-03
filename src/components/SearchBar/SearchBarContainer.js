@@ -6,9 +6,9 @@ import PostsPage from "../PostsContainer/PostsPage";
 const SearchBar = ({ dummyData }) => {
   /* The searchPost state saves the data from the search input
   on every occurance of the onChange event "line 46" */
-  const [searchedPost, setSearchedPost] = useState("");
+  const [searchedUser, setSearchedUser] = useState("");
   // The searchResults state is used to set the search result
-  const [searchedUser, setSearchedUser] = useState([]);
+  const [searchResult, setSearchResult] = useState([]);
 
   // useEffect executes whenever the dependency method get changed.
   useEffect(
@@ -19,15 +19,15 @@ const SearchBar = ({ dummyData }) => {
        and the inputted username */
       const results = dummyData.filter(user =>
         // return only the object that has the inputted username
-        user.username.toLowerCase().includes(searchedPost.toLowerCase())
+        user.username.toLowerCase().includes(searchedUser.toLowerCase())
       );
       // set the state of the searched username to the filter array of users
-      setSearchedUser(results);
+      setSearchResult(results);
     },
 
     /* The array of dependencies that useEffect dependent on which
     gets changed on every input by the user */
-    [searchedPost]
+    [searchedUser]
   );
 
   return (
@@ -41,9 +41,9 @@ const SearchBar = ({ dummyData }) => {
           <input
             type="text"
             placeholder="Search"
-            value={searchedPost}
+            value={searchedUser}
             // Using setSearchPost, set the state searchPost to the inputted value from the user
-            onChange={event => setSearchedPost(event.target.value)}
+            onChange={event => setSearchedUser(event.target.value)}
           />
         </form>
 
@@ -60,7 +60,7 @@ const SearchBar = ({ dummyData }) => {
         </div>
       </div>
       {/* render only the posts of the searched username */}
-      <PostsPage dummyData={searchedUser} />
+      <PostsPage dummyData={searchResult} />
     </div>
   );
 };
