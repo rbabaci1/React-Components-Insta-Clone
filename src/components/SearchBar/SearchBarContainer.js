@@ -41,7 +41,6 @@ const SearchBar = ({ dummyData }) => {
           <input
             type="text"
             placeholder="Search"
-            value={searchedUser}
             // Using setSearchPost, set the state searchPost to the inputted value from the user
             onChange={event => setSearchedUser(event.target.value)}
           />
